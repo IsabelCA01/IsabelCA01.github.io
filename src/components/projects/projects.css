@@ -1,0 +1,83 @@
+
+/* Colors used */
+/* Warm Beige: #F5E7D7 */
+/* Soft Gray: #E5E5EA */
+/* Deep Blue: #1A1D23 */
+/* Muted Coral: #D8836F */
+
+.portfolio-container {
+  max-width: 85vw;
+  width: 85vw;
+  font-family: 'Montserrat', sans-serif;
+  color: #1C3B50; /* Dark Blue */
+}
+.portfolio-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #1C3B50; /* Dark Blue */
+  font-weight: 700;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.project-card{
+  background: #fcfbfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(191,107,145, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.project-card-normal{
+  background: #fcfbfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(191,107,145, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor:default;
+  height: 100%;
+}
+.project-card-normal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0, 0.3);
+}
+
+.project-card-link {
+  cursor: pointer;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0, 0.3);
+}
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #d8836f;
+}
+.project-content {
+  padding: 1rem 1.2rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1C3B50; /* Dark Blue */;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+.project-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #1C3B50; /* Dark Blue */;
+  flex-grow: 1;
+}
