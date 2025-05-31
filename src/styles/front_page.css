@@ -301,20 +301,25 @@ body {
 .skills-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap:1rem;
   width: 100%;
 }
 .programming-languages {
+  flex:1 1 250px;
+  min-width: 200px;
   padding: 0px 1vw 0px 0px;
   border-right: 2px solid #D8836F; 
-
   display:inline-flex;
   flex-direction: column;  
   width: 100%;
 
 }
 .frameworks {
+  flex:1 1 250px;
+  min-width: 200px;
   padding: 0px 2vw 0px 2vw;
   border-right: 2px solid #D8836F;
   display:inline-flex;
@@ -323,6 +328,8 @@ body {
 }
 
 .tools {
+  flex:1 1 250px;
+  min-width: 200px;
   padding: 0px 0px 0px 1vw;
   display:inline-flex;
   flex-direction: column;
